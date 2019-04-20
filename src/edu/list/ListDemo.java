@@ -9,11 +9,17 @@ public class ListDemo {
         ListWithoutDuplicates withoutDuplicates = new ListWithoutDuplicates();
         withoutDuplicates.add("Dnipro");
         withoutDuplicates.add("Kiev");
-        withoutDuplicates.add("Dnipro");
-        System.out.println(withoutDuplicates.get(0));
-        System.out.println(withoutDuplicates.get(1));
-        System.out.println(withoutDuplicates.size());
+        withoutDuplicates.add("Lviv");
 
+        System.out.println("Size of list without duplicates: " + withoutDuplicates.size());
+        withoutDuplicates.iterList();
+
+        ListWithoutDuplicates withDuplicates = new ListWithoutDuplicates();
+        System.out.println("List with duplicate: ");
+        withDuplicates.add("Ukraine");
+        withDuplicates.add("Russia");
+        withDuplicates.add("Moldova");
+        withDuplicates.add("Ukraine");
 
        /*2)-создать два списка;
            - сгенерировать 2 случайных числа от 100 до 200 (M, N)

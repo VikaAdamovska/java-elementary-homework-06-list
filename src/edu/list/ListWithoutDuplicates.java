@@ -2,6 +2,7 @@ package edu.list;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ListIterator;
 
 public class ListWithoutDuplicates {
     private List<Object> list;
@@ -28,8 +29,12 @@ public class ListWithoutDuplicates {
         }
     }
 
-    public Object get(int index) {
-        return list.get(index);
+    public void iterList() {
+        System.out.println("My list without duplicates: ");
+        ListIterator iterator = list.listIterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 
     public int size() {
