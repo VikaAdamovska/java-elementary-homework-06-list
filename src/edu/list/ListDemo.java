@@ -11,8 +11,8 @@ public class ListDemo {
         withoutDuplicates.add("Kiev");
         withoutDuplicates.add("Lviv");
 
-        System.out.println("Size of list without duplicates: " + withoutDuplicates.size());
         withoutDuplicates.iterList();
+        System.out.println("Size of list without duplicates: " + withoutDuplicates.size());
 
         ListWithoutDuplicates withDuplicates = new ListWithoutDuplicates();
         System.out.println("List with duplicate: ");
